@@ -75,20 +75,21 @@ body {
 
 .hero-container {
   display: flex;
-  position: relative;
   min-height: 560px;
+
+  padding-bottom: 148px;
+}
+
+.hero-position-box {
+  display: flex;
+
   flex-wrap: nowrap;
 }
 .hero-img {
-  display: block;
   width: 100%;
 
   max-width: 759px;
-  position: absolute;
-  top: 50%;
-  right: 15%;
-  transform: translateY(-50%);
-  width: clamp(360px, 42vw, 560px);
+
   height: auto;
 }
 .hero-main-text {
@@ -111,8 +112,29 @@ body {
 }
 
 /* SECTION CLIEINT */
-
+.section-clients {
+  background: #ff9c7d;
+}
 .clients-icon-box {
   display: flex;
   gap: 103px;
+}
+.clients-main-text {
+  text-align: center;
+  padding-top: 98px;
+  max-width: 720px;
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%; /* 120% */
+}
+.clients-contant-box {
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+}
+/* section project */
+
+.section-project-content-box {
+  display: flex;
 }
