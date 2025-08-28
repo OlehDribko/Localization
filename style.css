@@ -17,13 +17,31 @@ body {
   font-family: "Roboto";
   font-size: 14px;
 }
+
+/* 
+global style */
 .container {
   margin: 0 auto;
   max-width: 1338px;
   width: 100%;
-  padding: 25px 51px;
+  padding-inline: clamp(16px, 4vw, 51px);
+  padding-block: 25px;
 }
 
+.g-main-text {
+  text-align: center;
+
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%;
+}
+.g-text {
+  font-size: 20px;
+
+  font-weight: 400;
+  line-height: 150%;
+}
 /* <<<<<<<<<<<<<<<<header */
 
 .header {
@@ -113,28 +131,39 @@ body {
 
 /* SECTION CLIEINT */
 .section-clients {
+  width: 100%;
   background: #ff9c7d;
 }
 .clients-icon-box {
   display: flex;
-  gap: 103px;
+  gap: clamp(16px, 6vw, 103px);
 }
 .clients-main-text {
-  text-align: center;
-  padding-top: 98px;
   max-width: 720px;
-  font-size: 50px;
-
-  font-weight: 600;
-  line-height: 120%; /* 120% */
 }
 .clients-contant-box {
+  width: 100%;
   display: flex;
+  align-items: center;
+
   flex-direction: column;
   gap: 82px;
+  padding-top: 96px;
+  padding-bottom: 124px;
+  background: #ff9c7d;
 }
 /* section project */
-
-.section-project-content-box {
+.project-box {
   display: flex;
+}
+.project-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.project-box-item {
+  flex: 1;
+}
+.project-bootom-text {
+  font-weight: 600;
 }
